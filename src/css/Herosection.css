@@ -1,0 +1,31 @@
+.hero {
+  position: relative;
+  height: 600px; /* Adjust height as needed */
+  background: url("../images/herosection.jpg") center/cover;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: Outfit, sans-serif;
+}
+
+.hero-name {
+  font-size: 24px;
+  font-family: Outfit, sans-serif;
+  font-weight: 100;
+}

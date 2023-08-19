@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import Projects from "./components/Projects";
+// import Education from "./Education";
+// import Skills from "./Skills";
+// import Footer from "./Footer";
+import "./App.css"; // You can create a CSS file for styling
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <HeroSection />
+      <Projects />
+      {/* <Education /> */}
+      {/* <Skills /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
