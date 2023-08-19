@@ -1,0 +1,65 @@
+.education {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.education-list {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.education-card {
+  flex: 0 0 auto;
+  width: 300px;
+  background-color: #444;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
+}
+
+.education-icon {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 24px;
+}
+
+.education-content {
+  padding: 20px;
+}
+
+.education-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.institution {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.major {
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+.date {
+  color: #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+/* Horizontal Scrollbar Styling */
+.education-list::-webkit-scrollbar {
+  display: none;
+}

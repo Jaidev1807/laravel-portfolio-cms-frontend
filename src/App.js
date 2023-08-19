@@ -2,9 +2,10 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Projects from "./components/Projects";
-// import Education from "./Education";
-// import Skills from "./Skills";
-// import Footer from "./Footer";
+import Experience from "./components/Experience";
+import Education from "./components/Education";
+import Footer from "./components/Footer";
+import Skills from "./components/Skill";
 import "./App.css"; // You can create a CSS file for styling
 
 function App() {
@@ -13,9 +14,10 @@ function App() {
       <Navbar />
       <HeroSection />
       <Projects />
-      {/* <Education /> */}
-      {/* <Skills /> */}
-      {/* <Footer /> */}
+      <Experience />
+      <Education />
+      <Skills />
+      <Footer />
     </div>
   );
 }

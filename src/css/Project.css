@@ -1,0 +1,41 @@
+.projects {
+  padding: 20px;
+  background-color: #333; /* Set a dark background color */
+  color: #fff; /* Set text color to white */
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.project-card a {
+  display: inline-block; /* Change to inline-block to style like a button */
+  padding: 10px 15px;
+  background-color: #007bff; /* Blue color for the button background */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: #0056b3; /* Darken the button on hover */
+}

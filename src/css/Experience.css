@@ -1,0 +1,57 @@
+.experience {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+}
+
+.timeline-card {
+  display: flex;
+  background-color: #444;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-icon {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 24px;
+}
+
+.timeline-content {
+  padding: 20px;
+  flex: 1;
+}
+
+.timeline-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.company {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.date {
+  color: #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  margin-top: 10px;
+}

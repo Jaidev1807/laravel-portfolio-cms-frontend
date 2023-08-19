@@ -1,0 +1,48 @@
+.skills {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  flex: 0 0 calc(33.33% - 20px);
+  background-color: #444;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.skill-icon {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.skill-content {
+  margin-top: 15px;
+}
+
+.skill-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.rating {
+  color: #ffcd00;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}

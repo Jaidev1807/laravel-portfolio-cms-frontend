@@ -1,45 +1,40 @@
 import React, { useState, useEffect } from "react";
-// import "./Projects.css"; // Update this CSS file for styling
+import "../css/Project.css";
 
-function Projects() {
-  const [projects, setProjects] = useState([]);
-
+export default function Projects() {
+  const [project, setProject] = useState([]); // Initialize project as an array
   useEffect(() => {
-    // Define the API URL
-    const apiUrl =
-      "https://codebydhaval-php-portfolio-cms.000webhostapp.com/api/projects";
-
-    // Define headers
-    const headers = new Headers();
-    headers.append("user-id", "13");
-
-    // Fetch data from the API
-    fetch(apiUrl, { headers })
+    fetch(
+      "https://codebydhaval-php-portfolio-cms.000webhostapp.com/api/projects/user/13"
+    )
       .then((response) => response.json())
       .then((data) => {
-        setProjects(data);
+        console.log(data);
+        setProject(data); // Set the whole array of projects
       })
       .catch((error) => {
-        console.error("Error fetching data:", error);
+        console.error(error);
       });
   }, []);
 
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <h2>Projects</h2>
       <div className="project-list">
-        {projects.map((project) => (
-          <div key={project.id} className="project-card">
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              View Project
-            </a>
-          </div>
-        ))}
+        {project.map(
+          (
+            proj // Change projects.map to project.map
+          ) => (
+            <div key={proj.id} className="project-card">
+              <h3>{proj.title}</h3>
+              <p>{proj.description}</p>
+              <a href={proj.link} target="_blank" rel="noopener noreferrer">
+                View Project
+              </a>
+            </div>
+          )
+        )}
       </div>
     </section>
   );
 }
-
-export default Projects;
